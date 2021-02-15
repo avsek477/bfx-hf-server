@@ -46,6 +46,11 @@
     "uuid": "^3.3.3",
     "ws": "^7.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
   "scripts": {
     "start": "NODE_PATH=lib node examples/server.js",
     "lint": "standard",
@@ -53,6 +58,7 @@
     "unit": "NODE_PATH=lib NODE_ENV=test mocha"
   },
   "devDependencies": {
+    "husky": "^5.0.9",
     "mocha": "^6.2.3",
     "standard": "^16.0.3"
   },
